@@ -1,6 +1,5 @@
+package org.htl.lesson_examples.inheritance;
 import java.util.Comparator;
-
-import org.htl.lesson_examples.inheritance.Fahrzeug;
 
 public class FahrZeugComparator implements Comparator<Fahrzeug> {
 

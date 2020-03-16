@@ -12,11 +12,23 @@ public class ComparableTest {
 		fzCompare.add(new Auto("blue", 200,4,4));
 		
 		//Man braucht hier keinen Rückgabewert, fzCompare wird nach dem Aufruf sortiert sein
+		
 		Collections.sort(fzCompare);
+		System.out.println("Ausgabe für Comparable:");
+		for (Fahrzeug fz : fzCompare)
+		{
+			System.out.println(fz);
+		}
+		
+		//!!!Damit man die Funktionsweise von Comparator sehen kann muss man die Zeile 16 auskommentieren
+		
+		//Das vergleichen kann man auch extern festlegen (sinnvoll, wenn es für 
+		//die gleichen Klassen unterschiedliche Sortierkriterien gibt
+		Collections.sort(fzCompare, new FahrZeugComparator());
+		System.out.println("Ausgabe für Comparator:");
 		for (Fahrzeug fz : fzCompare)
 		{
 			System.out.println(fz);
 		}
 	}
-
 }
