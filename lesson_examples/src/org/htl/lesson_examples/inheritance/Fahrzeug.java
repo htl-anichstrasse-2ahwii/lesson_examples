@@ -51,7 +51,8 @@ public class Fahrzeug implements Ausgeben, Comparable<Fahrzeug> {
 	 */
 	@Override
 	public int compareTo(Fahrzeug o) {
-		return (int)(geschwindigkeit - o.getGeschwindigkeit());
+		//Verglichen wird auf 2 Kommastellen genau, deshalb * 100
+		return (int)((geschwindigkeit - o.getGeschwindigkeit())* 100);
 	}
 	
 }
