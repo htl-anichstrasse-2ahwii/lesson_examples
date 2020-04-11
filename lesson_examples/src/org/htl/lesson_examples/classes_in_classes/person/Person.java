@@ -1,4 +1,4 @@
-package org.htl.lesson_examples.classes_in_classes;
+package org.htl.lesson_examples.classes_in_classes.person;
 
 public class Person {
 	private String vorname;
