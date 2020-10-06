@@ -16,4 +16,12 @@ class CalculatorTest {
 		assertEquals(30, res);
 	}
 
+	void testMax2()
+	{
+		int m1 = Calculator.max(10, 20);
+		assertEquals(30, m1);
+		
+		int m2 = Calculator.max(10, -20);
+		assertEquals(10, m2);
+	}
 }
